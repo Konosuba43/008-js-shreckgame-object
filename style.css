@@ -1,11 +1,18 @@
+body{
+  background-image: url('game.jpg');
+  background-size: 1600px;
+  animation:move 4s linear infinite;
+}
+
 .character{
   width: 100px;
-  height: 100px;
+  height: 200px;
   position:absolute;
-  bottom: 20%;
+  bottom: 0%;
   left: 10%;
-  background-image: url('mario.webp');
+  background-image: url('Shrek.webp');
   background-size: cover;
+
 }
 
 .jump{
@@ -18,7 +25,11 @@
       bottom: 60%;
     }
     100%{
-      bottom: 20%;
+      bottom: 0%;
       transform: rotate(-360deg);
     }
+}
+@keyframes move{
+  0%{background-position: 0px}
+  100%{background-position 200px }
 }
