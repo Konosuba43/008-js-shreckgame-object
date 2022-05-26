@@ -1,7 +1,7 @@
 body{
   background-image: url('game.jpg');
-  background-size: 1600px;
-  animation:move 4s linear infinite;
+  background-size:2071px  1551px;
+  animation:move 5s linear infinite;
 }
 
 .character{
@@ -12,12 +12,25 @@ body{
   left: 10%;
   background-image: url('Shrek.webp');
   background-size: cover;
+ 
+}
 
+.enemy{
+  width: 100px;
+  height: 200px;
+  position: reabsolute  ative;
+  bottom: 100%;
+  right: 100%;
+  background-image: url('monke.png');
+  background-size: cover;
+  animation: attack 5s linear infinite;
 }
 
 .jump{
   animation: jump 1000ms forwards;
 }
+
+
 
 
 @keyframes  jump {
@@ -30,6 +43,9 @@ body{
     }
 }
 @keyframes move{
-  0%{background-position: 0px}
-  100%{background-position 200px }
+  0%{background-position:  0px}
+  100%{background-position:  -100vw }
+}
+@keyframes attack{
+  
 }
